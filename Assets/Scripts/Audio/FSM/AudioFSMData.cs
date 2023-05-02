@@ -16,4 +16,7 @@ public class AudioFSMData : ScriptableObject
 
     [Header("3D Audio Settings")]
     public string sourceObjectName;
+
+    // [Header("Fade Settings")]
+    // public AnimationCurve fadeCurve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(1, 1));
 }

@@ -35,6 +35,7 @@ public class AudioFSM
         switch (state)
         {
             case AudioState.Initializing:
+                //audioSource.clip.LoadAudioData();
                 audioSource.Play();
                 state = AudioState.Playing;
                 break;
@@ -48,6 +49,7 @@ public class AudioFSM
                 
             case AudioState.Stopping:
                 audioSource.Stop();
+                audioSource.clip.UnloadAudioData();
                 state = AudioState.Stopped;
                 break;
                 

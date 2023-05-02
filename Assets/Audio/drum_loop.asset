@@ -17,8 +17,5 @@ MonoBehaviour:
   audioType: 20
   initialState: 3
   volume: 1
-  fadeTime: 2
   loop: 1
-  spatialBlend: 0
-  minDistance: 30
   sourceObjectName: RedFloor
