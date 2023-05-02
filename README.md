@@ -1,2 +1,2 @@
 # UnityAudioManager
-In-Editor Unit Audio Manager using State Machines
+In-Editor Unity Audio Manager using State Machines
