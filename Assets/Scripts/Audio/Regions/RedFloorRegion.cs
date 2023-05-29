@@ -19,12 +19,12 @@ public class RedFloorRegion : MonoBehaviour
         {
             if (!AudioManager.instance.IsPlaying(AudioReference.instance.redFloorMusic.referenceName))
             {
-                AudioManager.instance.PlayAudio(AudioReference.instance.redFloorMusic.referenceName);
+                AudioManager.instance.PlayAudio(AudioReference.instance.redFloorMusic.referenceName, true);
             }
 
             if (AudioManager.instance.IsPlaying(AudioReference.instance.windAmbience.referenceName))
             {
-                AudioManager.instance.StopAudio(AudioReference.instance.windAmbience.referenceName);
+                AudioManager.instance.StopAudio(AudioReference.instance.windAmbience.referenceName, true);
             }
         }
     }
@@ -35,12 +35,12 @@ public class RedFloorRegion : MonoBehaviour
         {
             if (AudioManager.instance.IsPlaying(AudioReference.instance.redFloorMusic.referenceName))
             {
-                AudioManager.instance.StopAudio(AudioReference.instance.redFloorMusic.referenceName);
+                AudioManager.instance.StopAudio(AudioReference.instance.redFloorMusic.referenceName, true);
             }
 
             if (!AudioManager.instance.IsPlaying(AudioReference.instance.windAmbience.referenceName))
             {
-                AudioManager.instance.PlayAudio(AudioReference.instance.windAmbience.referenceName);
+                AudioManager.instance.PlayAudio(AudioReference.instance.windAmbience.referenceName, true);
             }
         }
     }

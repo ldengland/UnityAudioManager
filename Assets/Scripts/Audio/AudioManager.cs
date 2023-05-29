@@ -89,11 +89,19 @@ public class AudioManager : MonoBehaviour
     /// Play audio clip by reference name
     /// </summary>
     /// <param name="referenceName">The reference name of a given FSM</param>
-    public void PlayAudio(string referenceName)
+    public void PlayAudio(string referenceName, bool fadeIn = false)
     {
         if (audioFSMs.ContainsKey(referenceName))
         {
-            audioFSMs[referenceName].Play();
+            if (fadeIn)
+            {
+                audioFSMs[referenceName].FadeIn();
+            }
+            else
+            {
+                audioFSMs[referenceName].Play();
+            }
+            
         }
         else
         {
@@ -105,11 +113,18 @@ public class AudioManager : MonoBehaviour
     /// Stop audio clip by reference name
     /// </summary>
     /// <param name="referenceName">The reference name of a given FSM</param>
-    public void StopAudio(string referenceName)
+    public void StopAudio(string referenceName, bool fadeOut = false)
     {
         if (audioFSMs.ContainsKey(referenceName))
         {
-            audioFSMs[referenceName].Stop();
+            if (fadeOut)
+            {
+                audioFSMs[referenceName].FadeOut();
+            }
+            else
+            {
+                audioFSMs[referenceName].Stop();
+            }
         }
         else
         {

@@ -15,7 +15,9 @@ MonoBehaviour:
   referenceName: redFloorMusic
   clip: {fileID: 8300000, guid: c2c7b4415c986d54ca38a6a66ded618f, type: 3}
   audioType: 20
-  initialState: 3
+  initialState: 8
   volume: 1
   loop: 1
+  fadeInTime: 0.5
+  fadeOutTime: 0.5
   sourceObjectName: RedFloor

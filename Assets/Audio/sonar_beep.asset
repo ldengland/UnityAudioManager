@@ -15,10 +15,9 @@ MonoBehaviour:
   referenceName: sonarBlip
   clip: {fileID: 8300000, guid: 6b64142a282fc964a8dbd6e9a642c59e, type: 3}
   audioType: 20
-  initialState: 3
+  initialState: 8
   volume: 1
-  fadeTime: 0
   loop: 1
-  spatialBlend: 0.8
-  minDistance: 1
+  fadeInTime: 0.5
+  fadeOutTime: 0.5
   sourceObjectName: SonarLocation
